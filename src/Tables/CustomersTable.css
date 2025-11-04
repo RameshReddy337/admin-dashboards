@@ -1,0 +1,65 @@
+.customer-table-container {
+  width: 75vw;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.table-title {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.filter-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-box input {
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.filter-icon {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customer-table th,
+.customer-table td {
+  padding: 0.6rem 0.5rem;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: left;
+}
+
+.sort-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.sort-btn .muted { opacity: 0.3; }
+
+.no-data {
+  text-align: center;
+  color: #777;
+  padding: 1rem;
+}
