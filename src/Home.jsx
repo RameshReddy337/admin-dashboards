@@ -21,7 +21,7 @@ function Home() {
 
     const productCount = data.length;
     const categoryCount = new Set(data.map(item => item.category)).size;
-    const priceSum = data.reduce((sum, item) => sum + item.price, 0);
+    // const priceSum = data.reduce((sum, item) => sum + item.price, 0);
     const stockSum = data.reduce((sum, item) => sum + item.stock, 0);
     const customerCount = CustomerData.length // Example static value
     // Shared color palette for both charts
@@ -54,11 +54,13 @@ function Home() {
                 </div>
 
                 <div className='card'>
+                    <Link to="/CustomersTable" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <div className='card-inner'>
                         <h3>CUSTOMERS</h3>
                         <BsPeopleFill className='card_icon' />
                     </div>
                     <h1>{customerCount}</h1>
+                    </Link>
                 </div>
 
                 <div className='card'>
@@ -70,10 +72,8 @@ function Home() {
                 </div>
             </div>
 
-            {/* ====== Charts Section ====== */}
             <div className='charts'>
 
-                {/* === Bar Chart === */}
                 <ResponsiveContainer width="100%" height="100%">
                     <BarChart
                         width={500}
