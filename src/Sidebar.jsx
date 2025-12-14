@@ -12,9 +12,8 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
         <div className='sidebar-title'>
             <div className='sidebar-brand'>
                 <Link to="/" className="home-link" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
-    {/* <BsCart3 className='icon_header' /> */}
-    <MdAdminPanelSettings className='icon_header' />
-    <span style={{ marginLeft: '8px', fontWeight: 'bold' }}>ADMIN DASHBOARD</span>
+    <img src="BRP LOGO.jpg" alt="BRP LOGO" className="Brp-logo" width={50} height={50}/>
+    <span style={{ marginLeft: '8px', fontWeight: 'bold', color: 'red' }}>BALLIREDDY PALLI</span>
   </Link>
             </div>
             <span className='icon close_icon' onClick={OpenSidebar}>X</span>
@@ -32,7 +31,7 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
                 </a>
             </li>
             <li className='sidebar-list-item'>
-                <a href="">
+                <a href="/CategoriesTable">
                     <BsFillGrid3X3GapFill className='icon'/> Categories
                 </a>
             </li>
@@ -47,12 +46,12 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
                 </a>
             </li>
             <li className='sidebar-list-item'>
-                <a href="">
+                <a href="/ReportsTable">
                     <BsMenuButtonWideFill className='icon'/> Reports
                 </a>
             </li>
             <li className='sidebar-list-item'>
-                <a href="">
+                <a href="/Settings">
                     <BsFillGearFill className='icon'/> Setting
                 </a>
             </li>

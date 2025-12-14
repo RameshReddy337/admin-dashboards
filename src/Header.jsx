@@ -28,9 +28,11 @@ function Header({ OpenSidebar }) {
 
         <div className="header-right">
           <BsFillBellFill className="icon" />
-          <Link to="/EMail" className="home-link">
+          <a href="mailto:" target='_blank' rel="noopener noreferrer">
+          {/* <Link to="mailto:" className="home-link"> */}
             <BsFillEnvelopeFill className="icon" />
-          </Link>
+          {/* </Link> */}
+          </a>
           <BsPersonCircle className="icon" onClick={handleProfileClick} />
         </div>
       </header>
